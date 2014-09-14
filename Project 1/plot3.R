@@ -15,7 +15,7 @@ rm(temp, url)
 # Fix date, convert from text to date
 power$Date <- as.Date(power$Date, "%d/%m/%Y")
 
-# Subset, keep observations between 2/1/2007 and 2/3/2007
+# Subset, keep observations between 2/1/2007 and 2/2/2007
 power <- subset(power, Date > as.Date("2007-01-31") & Date < as.Date("2007-02-03"))
 
 # Fix time, convert from text to date-time
